@@ -27,7 +27,7 @@ function Form() {
       form_data.append("7", form.diabetes_pedigree);
       form_data.append("8", form.age);
 
-      fetch('https://dsmodeldeployment1.herokuapp.com/predict', {
+      fetch('https://traffic-detection-system-f79927c0528e.herokuapp.com/', {
          method: 'POST',
          body: form_data
       })
