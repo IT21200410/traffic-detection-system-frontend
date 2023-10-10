@@ -1,0 +1,52 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Center the cards and add space */
+.row {
+  display: flex;
+  justify-content: center;
+  margin: 0 -10px; /* Adjust the negative margin to control spacing */
+}
+
+.column {
+  width: 25%;
+  padding: 0 10px;
+}
+
+/* Remove extra left and right margins, due to padding */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive columns */
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+    display: block;
+    margin-bottom: 20px;
+  }
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  padding: 16px;
+  text-align: center;
+  background-color: rgba(0,116,174,0.7);
+  border-radius: 20px;
+  margin-bottom: 20px; /* Adjust margin to control space between cards */
+}
+
+.card h3 {
+  color: #f1f1f1;
+}
+
+.card p {
+  color: #f1f1f1;
+}
