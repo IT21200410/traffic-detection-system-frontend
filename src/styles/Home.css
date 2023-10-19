@@ -140,7 +140,7 @@ button:hover{
     /* background: #d4fef2; */ 
     /* background: #000000; */
     
-    background-image: url('C:\Users\Wijesingha\Downloads\traffic-detection-system-frontend-main\traffic-detection-system-frontend-main\src\assets\back3.png'); 
+    background-image: url('../assets/back3.png'); 
     
   }
   .section h1 {
