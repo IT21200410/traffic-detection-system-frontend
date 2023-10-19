@@ -1,5 +1,6 @@
 * {
   box-sizing: border-box;
+  
 }
 
 body {
@@ -30,17 +31,19 @@ body {
   .column {
     width: 100%;
     display: block;
-    margin-bottom: 20px;
+    margin-bottom: 0px;
   }
 }
 
 .card {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-  padding: 16px;
+  padding:0px;
   text-align: center;
   background-color: rgba(0,116,174,0.7);
   border-radius: 20px;
-  margin-bottom: 20px; /* Adjust margin to control space between cards */
+  margin-bottom: 0px; /* Adjust margin to control space between cards */
+  margin-right: 50px;
+  margin-left: 50px;
 }
 
 .card h3 {

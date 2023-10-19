@@ -18,13 +18,13 @@ function Navbar() {
         <div className="hiddenLinks">
           <Link to="/"><strong>Home</strong></Link>
           <Link to="/AboutUS"><strong>About</strong></Link>
-          <Link to="/contact"><strong>Contact</strong></Link>
+          {/* <Link to="/contact"><strong>Contact</strong></Link> */}
         </div>
       </div>
       <div className="rightSide">
         <Link to="/"><strong>Home</strong></Link>
         <Link to="/AboutUS"><strong>About</strong></Link>
-        <Link to="/contact"><strong>Contact</strong></Link>
+        {/* <Link to="/contact"><strong>Contact</strong></Link> */}
         <button onClick={toggleNavbar}>
           <ReorderIcon />
         </button>
