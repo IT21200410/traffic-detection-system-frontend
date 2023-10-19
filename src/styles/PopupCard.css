@@ -25,7 +25,7 @@
   .popup-card {
     background: #fff;
     width: 500px;
-    height: 570px;
+    height: 650px;
     padding: 20px;
     border-radius: 5px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
@@ -39,4 +39,24 @@
     background-color: #ff0000;
     color: white;
   }
-  
+  .TimePicker{
+    width: 80%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+   
+  }
+  .DatePicker{
+    width: 80%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+   
+  }
+

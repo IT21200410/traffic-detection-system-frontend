@@ -1,7 +1,15 @@
 import React from 'react';
 import '../styles/PopupCard.css'; // Create a CSS file for the component
+import dayjs from 'dayjs';
+
+import { TimePicker } from '@mui/x-date-pickers/TimePicker';
+import { AdapterDayjs } from '@mui/x-date-pickers/AdapterDayjs';
+import { LocalizationProvider } from '@mui/x-date-pickers/LocalizationProvider';
+import { DatePicker } from '@mui/x-date-pickers/DatePicker';
 
 const PopupCard = ({ onClose }) => {
+
+  const [value, setValue] = React.useState(dayjs('2022-04-17T15:30'));
   return (
     <div className="popup-container">
       <div className="popup-card">
@@ -13,18 +21,34 @@ const PopupCard = ({ onClose }) => {
           <option value="Junction 01">Junction 01</option>
           <option value="Junction 02">Junction 02</option>
           <option value="Junction 03">Junction 03</option>
+          <option value="Junction 03">Junction 04</option>
           
           </select>
         </div>
         <div className="form-group">
           <label htmlFor="time" style={{ marginLeft: -380 }}>Time</label>
           <br/>
-          <input type="text" id="time" />
-        </div>
+
+          <div className='TimePicker'>
+          <LocalizationProvider dateAdapter={AdapterDayjs}>
+            <TimePicker label="" />
+            </LocalizationProvider>
+          </div>
+          </div>
+
+
         <div className="form-group">
-          <label htmlFor="day" style={{ marginLeft: -380 }}>Day</label>
+          <label htmlFor="day" style={{ marginLeft: -380 }}>Date</label>
           <br/>
-          <input type="text" id="day" />
+       
+          <div className='DatePicker'>
+          <LocalizationProvider dateAdapter={AdapterDayjs}>
+           
+          <DatePicker label="" />
+          
+          </LocalizationProvider>
+          </div>
+
         </div>
 
         <div className="form-group">
