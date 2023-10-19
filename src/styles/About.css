@@ -1,33 +1,66 @@
-.body {
-    background: rgb(10, 16, 84);
-    background: linear-gradient(0deg, rgba(10, 16, 84, 1) 0%, rgba(15, 114, 187, 1) 56%, rgba(9, 189, 226, 1) 100%);
-    background-color: rgb(37, 150, 190);
-  }
-  
-  /* Card image styles */
-  .card-image {
-    width: 105%;
-    margin-top: 15%;
-  }
-  
-  /* Card text styles */
-  .card-text {
-    color: white;
-    text-align: justify;
-  }
-  
-  /* Card title styles */
-  .card-title {
-    color: white;
-  }
-  
-  /* Main container styles */
-  .container-main {
-    margin-top: 5%;
-  }
-  
-  /* Section container styles */
-  .container-section {
-    margin-top: 5%;
-    padding: 5% 0;
-  }
+.container{
+  justify-content: space-around;
+  margin-bottom: 60px;
+}
+
+.row{ 
+  margin-top: 5%;
+  margin-bottom: 60px;
+}
+.colum{
+  margin-left: 100%;
+  float: left;
+  padding-right: 50%;
+}
+/* About.css */
+.card-about-1 {
+  width: 100%;
+  margin-right: 5px; /* Add space to the right of the first card */
+}
+
+.card-about {
+
+  width: 100%;
+  margin-left: 150px; /* Add space to the left of the second card */
+}
+
+.card_3, .card_4 {
+  flex: 1;
+  background-color: #fff;
+  border: 1px solid #ffffff;
+  border-radius: 5px;
+  padding: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  text-align: left;
+  margin: 10px; /* Add margin for spacing */
+}
+
+.card_3 {
+  float: left;
+}
+
+.card_4 {
+  float: right;
+}
+
+.row_last{
+  display: flex;
+  justify-content: space-between;
+}
+
+h1{
+  color: #00a82d;
+  font-size: 30PX;
+  margin-bottom: 10px;
+}
+h2{
+  color: #00a82d;
+  font-size: 30PX;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+P{
+  font-size: 20PX;
+  line-height: 35px;
+}

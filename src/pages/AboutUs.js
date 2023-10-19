@@ -1,90 +1,118 @@
 import React from 'react';
-import {
-    MDBCardImage,
-    MDBCard, MDBCardBody, MDBCardTitle, MDBCardText, MDBRow, MDBCol
-} from 'mdb-react-ui-kit';
-import Navbar from "../components/Navbar";
-import "../styles/Footer.css";
+import NavBar from "../components/NavBar_copy";
+import "../styles/About.css"
 
 function AboutUS() {
 
     return (
+<div className='container'>
+      <div className='body'>
+            <NavBar />    
+           
+hiiiiii
 
-<div style={{
-  background: 'rgb(10,16,84)',
-  background: 'linear-gradient(0deg, rgba(10,16,84,1) 0%, rgba(15,114,187,1) 56%, rgba(9,189,226,1) 100%)',
-  backgroundColor: 'rgb(37, 150, 190)' 
-}}>
-            <Navbar />
-            <section className="container mt-5 pt-5 pb-5 mb-5">
-                <div className="container">
-                    <MDBRow className="mt-5">
-                        <MDBCol sm='1'></MDBCol>
-                        <MDBCol sm='6'>
-                            <MDBCard className="border-0 shadow-0" style={{backgroundColor:"rgba(0,116,174,0)"}}>
-                                <MDBCardImage position='top' alt='...' src='https://images.unsplash.com/photo-1465447142348-e9952c393450?auto=format&fit=crop&q=80&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&w=1974' />
-                            </MDBCard>
-                        </MDBCol>
-                        <MDBCol sm='5'>
-                            <MDBCard className="border-0 shadow-0" style={{backgroundColor:"rgba(0,116,174,0)"}}>
-                                <MDBCardBody className="pt-5 mt-3 text-left">
-                                    <br />
-                                    <br />
-                                    <br />
-                                    <MDBCardTitle className="h3 text-uppercase" style={{ color: 'white'}}>Introduction</MDBCardTitle>
-                                    <MDBCardText >
-                                    The Traffic Prediction System is a cutting-edge solution designed to revolutionize transportation. It harnesses advanced data analytics and predictive modeling to offer real-time traffic insights, empowering commuters to make informed decisions about their routes. By reducing congestion and enhancing safety, our system aims to create a more efficient and sustainable transportation network for everyone.                                    </MDBCardText>
-                                </MDBCardBody>
-                            </MDBCard>
-                        </MDBCol>
-                    </MDBRow>
-                    <MDBRow className="mt-5 pt-5">
-                        <MDBCol sm='1'></MDBCol>
-                        <MDBCol sm='5'>
-                            <MDBCard className="border-0 shadow-0" style={{backgroundColor:"rgba(0,116,174,0)"}}>
-                                <MDBCardBody className="pt-5 mt-3 text-left">
-                                    <MDBCardTitle className="h3 text-white text-uppercase">KEY FEATURES</MDBCardTitle>
-                                    <MDBCardText >
-                                    The key features of the Traffic Prediction System include real-time traffic updates, route optimization, safety alerts, and eco-friendly travel recommendations. Users can access up-to-the-minute traffic information, receive optimized route suggestions, stay informed about safety hazards, and discover eco-conscious transportation options. These features work together to ensure a smoother and safer commuting experience while promoting sustainable travel choices.                                    </MDBCardText>
-                                </MDBCardBody>
-                            </MDBCard>
-                        </MDBCol>
-                        <MDBCol sm='6'>
-                            <MDBCard className="border-0 shadow-0" style={{backgroundColor:"rgba(0,116,174,0)"}}>
-                                <MDBCardImage  position='top' alt='...' src='https://images.unsplash.com/photo-1635930919419-f935f8902b0f?auto=format&fit=crop&q=80&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&w=2070' />
-                            </MDBCard>
-                        </MDBCol>
-                    </MDBRow>
-                    <MDBRow className="mt-5 pt-5">
-                        <MDBCol sm='4' className="mt-1">
-                            <MDBCard className="border-0 shadow-0" style={{backgroundColor:"rgba(0,116,174,0)"}}>
-                                <MDBCardTitle className="h3 text-white text-center text-uppercase">Objectives</MDBCardTitle>
-                                <hr />
-                                <MDBCardText >
 
-                                The objectives of the Traffic Prediction System are to deliver accurate real-time traffic information, reduce commute times, enhance safety, and lower environmental impact. We aim to provide users with reliable traffic forecasts, minimize traffic congestion, improve road safety measures, and encourage eco-friendly transportation choices. Our primary goal is to create a seamless and efficient commuting experience for all travelers.                                </MDBCardText>
-                            </MDBCard>
-                        </MDBCol>
-                        <MDBCol sm='4' className="mt-1">
-                            <MDBCard className="border-0 shadow-0" style={{backgroundColor:"rgba(0,116,174,0)"}}>
-                                <MDBCardTitle className="h3 text-white text-center text-uppercase">Vision</MDBCardTitle>
-                                <hr />
-                                <MDBCardText >
-                                The vision of the Traffic Prediction System is to create a seamless and smart transportation ecosystem. By harnessing cutting-edge technology, we aim to offer real-time traffic insights and empower travelers to optimize their journeys. Our vision includes a future where traffic congestion is minimized, road safety is paramount, and sustainable travel choices are encouraged, ultimately leading to smoother and more efficient mobility for all.                                </MDBCardText>
-                            </MDBCard>
-                        </MDBCol>
-                        <MDBCol sm='4' className="mt-1">
-                            <MDBCard className="border-0 shadow-0" style={{backgroundColor:"rgba(0,116,174,0)"}}>
-                                <MDBCardTitle className="h3 text-white text-center text-uppercase">Mission</MDBCardTitle>
-                                <hr />
-                                <MDBCardText >
-                                The Traffic Prediction System's mission is to improve transportation efficiency and safety. Using data analytics and predictive modeling, we provide real-time traffic forecasts, helping users make informed travel decisions. Our goal is to reduce congestion, minimize delays, and create a sustainable and interconnected transportation network for a better quality of life.                                </MDBCardText>
-                            </MDBCard>
-                        </MDBCol>
-                    </MDBRow>
-                </div>
-            </section>
+<div className="row">
+        <div className="column">
+          <div className="card-about-1">
+          <img style={{ width: '105%', marginTop: '15%' }} position='top' alt='...' src='https://miro.medium.com/v2/resize:fit:828/0*oJNHNtiFqsiAMYbj' />
+            
+          </div>
         </div>
+
+        <div className="column">
+          <div className="card-about">
+          <h1 className="h1 text-uppercase" >INTRODUCTION</h1>
+          <p style={{ color: 'black', textAlign: 'justify', marginleft:'100%' }}>
+
+          <br></br>
+              A Traffic Detection System is a critical component of modern transportation infrastructure designed to monitor, manage, and optimize traffic flow on roadways and urban streets. Leveraging advanced technologies, such as cameras, sensors, and data analytics, these systems provide real-time insights into traffic conditions, incident detection, and traffic signal coordination. The primary goal is to enhance safety, reduce congestion, and improve the overall efficiency of transportation networks. By constantly monitoring and analyzing traffic data, Traffic Detection Systems empower authorities to make informed decisions, mitigate congestion, and provide timely information to commuters, ultimately contributing to smoother and safer journeys for all.   </p>
+          </div>
+        </div>
+        </div>
+
+
+        <div className="row">
+        <div className="column">
+        <div className="card-about-1"style={{marginleft:'100%'}}>
+          <h1 className="h1 text-uppercase" >KEY FEATURES</h1>
+                                    <p style={{ color: 'black', textAlign: 'justify', marginleft:'100%' }}>
+
+                                        <br></br>
+                                    The key features of the Traffic Prediction System include real-time traffic updates, route optimization, safety alerts, and eco-friendly travel recommendations. Users can access up-to-the-minute traffic information, receive optimized route suggestions, stay informed about safety hazards, and discover eco-conscious transportation options. These features work together to ensure a smoother and safer commuting experience while promoting sustainable travel choices.   </p>
+          </div>
+        </div>
+
+        <div className="column">
+        <div className="card-about"style={{color:"red"}}>
+          <img style={{ width: '105%', marginTop: '15%' }} position='top' alt='...' src='https://cdn.bulbapp.io/frontend/images/1944f37c-7381-4cfa-967c-70c8bed649b7/1' />
+            
+          </div>
+        </div>
+        </div>   
+
+
+       <h1>Matchine Learning Models That We Use</h1>
+       <br></br>
+       <br></br>
+
+       <div className="row_last">
+        <div className="column">
+        <div className="card_3"style={{marginleft:'100%'}}>
+          <h2 className="h2 text-uppercase" >KNeighbors Classifier</h2>
+                                    <p style={{ color: 'black', textAlign: 'justify', marginleft:'100%' }}>
+
+                                        <br></br>
+                                        K-Nearest Neighbors (KNN) is a simple yet effective supervised machine learning algorithm. It predicts based on the majority class of the K nearest data points. KNN works for classification and regression tasks, though it has limitations in high-dimensional data. It finds use in recommendation systems, image classification, and anomaly detection due to its simplicity and versatility. It's a valuable tool in machine learning for its intuitive approach and ease of use.   </p>
+          </div>
+        </div>
+
+        <div className="column">
+        <div className="card_3"style={{marginleft:'100%'}}>
+          <h2 className="h2 text-uppercase" >Naive Bayes</h2>
+                                    <p style={{ color: 'black', textAlign: 'justify', marginleft:'100%' }}>
+
+                                        <br></br>
+                                        Naive Bayes is a fundamental machine learning algorithm known for its simplicity and efficiency. It's widely used for text classification tasks, such as spam email detection and sentiment analysis, where it excels in making predictions based on the probability of class membership. Naive Bayes assumes that features are independent, which is a "naive" but often reasonable simplification. Despite its simplicity, Naive Bayes often delivers strong performance, making it a popular choice for various classification problems.   </p>
+          </div>
+        </div>
+
+        <div className="column">
+        <div className="card_4"style={{marginleft:'100%'}}>
+          <h2 className="h2 text-uppercase" >Random Forest</h2>
+                                    <p style={{ color: 'black', textAlign: 'justify', marginleft:'100%' }}>
+
+                                        <br></br>
+                                        Random Forest is a versatile and powerful machine learning algorithm. It's commonly used for both classification and regression tasks, offering exceptional accuracy by combining multiple decision trees. What sets Random Forest apart is its ability to reduce overfitting and enhance generalization through the introduction of randomness during training. This makes it a top choice for various applications, from image classification to financial forecasting, where precision and robustness are crucial.   </p>
+          </div>
+        </div>
+
+        <div className="column">
+        <div className="card_4"style={{marginleft:'100%'}}>
+          <h2 className="h2 text-uppercase" >Support Vector Machine</h2>
+                                    <p style={{ color: 'black', textAlign: 'justify', marginleft:'100%' }}>
+
+                                        <br></br>
+                                    
+                                       
+                                       Support Vector Machine (SVM) is a versatile model for classification and regression. It finds the best hyperplane to separate data into classes, even in high dimensions. SVM is known for its robustness in handling complex data, making it suitable for various applications, from image recognition to text classification. Its strong theoretical foundations have established SVM as a reliable tool in the machine learning toolbox.</p>
+          </div>
+        </div>
+
+
+
+
+
+
+
+        </div>   
+
+
+    
+      </div>
+
+      </div> 
+
     )
 };
 
