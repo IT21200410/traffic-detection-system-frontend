@@ -62,17 +62,21 @@ function Home() {
       <button>PREDICT</button>
       <h4>Press 'Predict' Navigate the Future with Confidence.</h4> */}
       <div class="card1">
-        <h2>Traffic Forecasting</h2>
-        <h3>Explore how machine learning <br/>algorithms are changing<br/> traffic prediction and <br/>helping optimize traffic <br/>flow in urban areas.</h3>
+        <h2>Random Forest</h2>
+        <h3>Accuracy - 0.85</h3>
     </div>
     <div class="card2">
-        <h2> AI in Traffic Prediction</h2>
-        <h3>Learn how artificial <br/>intelligence is revolutionizing <br/>traffic prediction, <br/>improving route planning<br/> and travel experiences.</h3>
+        <h2>KNN</h2>
+        <h3>Accuracy - 0.82</h3>
     </div>
     <div class="card3">
-        <h2>Sustainable Transportation</h2>
-        <h3>Discover how traffic <br/>prediction systems support <br/>eco-friendly travel options <br/>and reduce carbon emissions <br/>in cities.</h3>
+        <h2>Naive Bayes</h2>
+        <h3>Accuracy - 0.56</h3>
     </div>
+    <div class="card4">
+        <h2>SVM</h2>
+        <h3>Accuracy - 0.75</h3>
+    </div>
           
         </div>
       </div>

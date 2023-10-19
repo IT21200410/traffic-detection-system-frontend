@@ -3,16 +3,16 @@ body {
     /* font-family: Arial, sans-serif; */
   }
 
-.homeimg1{
+  .homeimg1{
     height: 350px;
     margin-top: -60px;
     margin-left: 0px;
 }
 
 .homeimg2{
-    height: 350px;
+    height: 337px;
     width: 800px;
-    margin-top: 13px;
+    margin-top: -60px;
     margin-left: 0px;
     box-shadow: 5px 5px 20px 0 rgba(0, 0, 0, 0.3);
 }
@@ -20,40 +20,55 @@ body {
 .card1 {
     
     padding: 20px;
-    margin-right: 50%;
+    margin-right: 57%;
     background-color: #f3f3f3;
     color: #fff;
     text-align: center;
     border-radius: 10px;
     box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.2);
-    width: 23%;
+    width: 15%;
 }
 
 .card2 {
     
     padding: 20px;
-    margin-top: -13%;
-    margin-right: -0.3%;
+    margin-top: -8.4%;
+    margin-right: 22%;
     background-color: #f3f3f3;
     color: #fff;
     text-align: center;
     border-radius: 10px;
     box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.2);
-    width: 23%;
+    width: 15%;
 }
 
 .card3 {
     
     padding: 20px;
-    margin-top: -13%;
-    margin-right: -50%;
+    margin-top: -8.4%;
+    margin-right: -13%;
     background-color: #f3f3f3;
     color: #fff;
     text-align: center;
     border-radius: 10px;
     box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.2);
-    width: 23%;
+    width: 15%;
 }
+
+.card4 {
+    
+  padding: 10px;
+  margin-top: -8.2%;
+  margin-right: -48%;
+  background-color: #f3f3f3;
+  color: #fff;
+  text-align: center;
+  border-radius: 10px;
+  box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.2);
+  width:15%;  
+ 
+}
+
 /* .content {
     max-width: 800px;
     margin: 40px auto;
