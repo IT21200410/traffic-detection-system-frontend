@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import logo from "../assets/logo.png";
 import homeimg1 from "../assets/home3.png";
 import chart from "../assets/line_chart.png"
 import NavBar from '../components/NavBar_copy'

@@ -1,4 +1,5 @@
 import React from 'react';
+import {useState} from 'react';
 import '../styles/PopupCard.css'; // Create a CSS file for the component
 import dayjs from 'dayjs';
 
@@ -9,19 +10,47 @@ import { DatePicker } from '@mui/x-date-pickers/DatePicker';
 
 const PopupCard = ({ onClose }) => {
 
-  const [value, setValue] = React.useState(dayjs('2022-04-17T15:30'));
+  const [form, setForm] = useState({
+    location: "",
+    time : "",
+    date: dayjs('2022-04-17T15:30')}
+    );
+
+  const onChange = (event) => {
+
+    const name = event.target.name;
+    const value = event.target.value;
+
+    setForm({...form, [name]: value})
+
+  }
+
+  const handleDateChange = date => {
+    setForm({ date: date })
+    console.log(date)
+  }
+
+
+  const handleTimeChange = time => {
+    setForm({ time: time })
+    console.log(time)
+  }
+
+
+
   return (
     <div className="popup-container">
       <div className="popup-card">
         <h2>Predict Traffic</h2>
+        <form>
         <div className="form-group">
           <label htmlFor="location"  style={{ marginLeft: -350 }}>Location</label>
           <br/>
-          <select id="location">
-          <option value="Junction 01">Junction 01</option>
-          <option value="Junction 02">Junction 02</option>
-          <option value="Junction 03">Junction 03</option>
-          <option value="Junction 03">Junction 04</option>
+          <select id="location" name = "location" defaultValue = {form.location} onChange = {onChange}>
+          <option value="1">Junction 01</option>
+          <option value="2">Junction 02</option>
+          <option value="3">Junction 03</option>
+          <option value="4">Junction 04</option>
           
           </select>
         </div>
@@ -31,7 +60,7 @@ const PopupCard = ({ onClose }) => {
 
           <div className='TimePicker'>
           <LocalizationProvider dateAdapter={AdapterDayjs}>
-            <TimePicker label="" />
+            <TimePicker label="" value = {form.time} onChange = {handleTimeChange}/>
             </LocalizationProvider>
           </div>
           </div>
@@ -44,7 +73,7 @@ const PopupCard = ({ onClose }) => {
           <div className='DatePicker'>
           <LocalizationProvider dateAdapter={AdapterDayjs}>
            
-          <DatePicker label="" />
+          <DatePicker label="" name = "date" value = {form.date} onChange = {handleDateChange} />
           
           </LocalizationProvider>
           </div>
@@ -60,6 +89,7 @@ const PopupCard = ({ onClose }) => {
         <br/>
         <br/>
         <button onClick={onClose} className='cls'>Close</button>
+        </form>
       </div>
     </div>
   );
