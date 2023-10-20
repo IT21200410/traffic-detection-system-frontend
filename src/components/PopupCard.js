@@ -52,11 +52,6 @@ const PopupCard = ({ onClose }) => {
 
     event.preventDefault()
 
-    // const form_data = new FormData()
-    // form_data.append("junction", form.junction)
-    // form_data.append("time", form.time)
-    // form_data.append("date", form.date)
-
     await axios.post('https://traffic-detection-system-f79927c0528e.herokuapp.com/predict_manuja',{
       "junction": form.junction,
       "time": form.time,
