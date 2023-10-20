@@ -4,6 +4,7 @@ import homeimg1 from "../assets/home3.png";
 import chart from "../assets/line_chart.png"
 import NavBar from '../components/NavBar_copy'
 import PopupCard from '../components/PopupCard';
+import Chartz from "../components/Chartz";
 import '../styles/Home.css';
 
 function Home() {
@@ -55,7 +56,8 @@ function Home() {
       <NavBar/> 
         <div class="content-center">
           
-        <img src={chart} className="homeimg2" />
+        {/* <img src={chart} className="homeimg2" /> */}
+        <Chartz/>
      
           <h1>Navigating Tomorrow's Roads, Today!</h1>
       {/* <p>Traffic Sense helps you to determine traffic and find them fast.</p>

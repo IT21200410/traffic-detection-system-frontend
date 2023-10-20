@@ -63,13 +63,12 @@ const PopupCard = ({ onClose }) => {
           <br/>
        
           <div className="DatePicker">
-        <LocalizationProvider dateAdapter={AdapterDayjs}>
+        <LocalizationProvider dateAdapter={AdapterDayjs} >
           <DatePicker
             label=""
             disablePast
             maxDate={maxDate}
-            onChange={handleDateChange}
-            
+            onChange={handleDateChange} 
           />
         </LocalizationProvider>
       </div>
