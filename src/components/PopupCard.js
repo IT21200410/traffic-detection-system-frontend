@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import '../styles/PopupCard.css'; // Create a CSS file for the component
 import dayjs from 'dayjs';
 
@@ -7,9 +7,30 @@ import { AdapterDayjs } from '@mui/x-date-pickers/AdapterDayjs';
 import { LocalizationProvider } from '@mui/x-date-pickers/LocalizationProvider';
 import { DatePicker } from '@mui/x-date-pickers/DatePicker';
 
+
 const PopupCard = ({ onClose }) => {
 
   const [value, setValue] = React.useState(dayjs('2022-04-17T15:30'));
+
+
+  const [selectedDate, setSelectedDate] = useState(null);
+  const maxDate = dayjs().add(1, 'year'); // Calculate the maximum date (one year from today)
+  const today = dayjs();
+
+  const handleDateChange = (date) => {
+    setSelectedDate(date);
+
+    // Check if the selected date is more than a year from today
+    if (date && date.isAfter(maxDate)) {
+      alert('Error: Please choose a date within the next year.');
+    }
+  };
+
+
+
+
+
+
   return (
     <div className="popup-container">
       <div className="popup-card">
@@ -41,13 +62,16 @@ const PopupCard = ({ onClose }) => {
           <label htmlFor="day" style={{ marginLeft: -380 }}>Date</label>
           <br/>
        
-          <div className='DatePicker'>
-          <LocalizationProvider dateAdapter={AdapterDayjs}>
-           
-          <DatePicker label="" />
-          
-          </LocalizationProvider>
-          </div>
+          <div className="DatePicker">
+        <LocalizationProvider dateAdapter={AdapterDayjs}>
+          <DatePicker
+            value={selectedDate}
+            onChange={handleDateChange}
+            renderInput={(params) => <input {...params} />}
+            label=""
+          />
+        </LocalizationProvider>
+      </div>
 
         </div>
 
