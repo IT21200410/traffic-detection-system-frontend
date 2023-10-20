@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import '../styles/PopupCard.css'; // Create a CSS file for the component
 import dayjs from 'dayjs';
 
@@ -13,19 +13,19 @@ const PopupCard = ({ onClose }) => {
   const [value, setValue] = React.useState(dayjs('2022-04-17T15:30'));
 
 
-  const [selectedDate, setSelectedDate] = useState(null);
   const maxDate = dayjs().add(1, 'year'); // Calculate the maximum date (one year from today)
   const today = dayjs();
 
   const handleDateChange = (date) => {
-    setSelectedDate(date);
-
-    // Check if the selected date is more than a year from today
     if (date && date.isAfter(maxDate)) {
       alert('Error: Please choose a date within the next year.');
     }
   };
 
+  const isDateDisabled = (date) => {
+    // Check if the date is before today or more than one year in the future
+    return date.isBefore(today) || date.isAfter(maxDate);
+  };
 
 
 
@@ -65,10 +65,11 @@ const PopupCard = ({ onClose }) => {
           <div className="DatePicker">
         <LocalizationProvider dateAdapter={AdapterDayjs}>
           <DatePicker
-            value={selectedDate}
-            onChange={handleDateChange}
-            renderInput={(params) => <input {...params} />}
             label=""
+            disablePast
+            maxDate={maxDate}
+            onChange={handleDateChange}
+            
           />
         </LocalizationProvider>
       </div>
