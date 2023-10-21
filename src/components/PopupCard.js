@@ -17,10 +17,10 @@ const PopupCard = ({ onClose }) => {
   const [form, setForm] = useState({
     junction: "1",
     time : "",
-    date: dayjs('2022-04-17T15:30')}
+    date: dayjs('2017-04-17T15:30')}
     );
 
-  const maxDate = dayjs().add(1, 'year'); // Calculate the maximum date (one year from today)
+  const maxDate = dayjs('2017-04-17T15:30').add(1, 'year'); // Calculate the maximum date (one year from today)
   const today = dayjs();
 
   const onChange = (event) => {
@@ -104,7 +104,7 @@ const PopupCard = ({ onClose }) => {
         <LocalizationProvider dateAdapter={AdapterDayjs} >
           <DatePicker
             label=""
-            disablePast
+            minDate = {dayjs('2017-04-17T15:30')}
             maxDate={maxDate}
             onChange={handleDateChange} 
           />
