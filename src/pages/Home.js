@@ -64,19 +64,19 @@ function Home() {
       <h4>Press 'Predict' Navigate the Future with Confidence.</h4> */}
       <div class="card1">
         <h2>Random Forest</h2>
-        <h3>Accuracy - 0.85</h3>
+        <h3>Accuracy - 0.97</h3>
     </div>
     <div class="card2">
         <h2>KNN</h2>
-        <h3>Accuracy - 0.82</h3>
+        <h3>Accuracy - 0.94</h3>
     </div>
     <div class="card3">
         <h2>Naive Bayes</h2>
-        <h3>Accuracy - 0.56</h3>
+        <h3>Accuracy - 0.80</h3>
     </div>
     <div class="card4">
         <h2>SVM</h2>
-        <h3>Accuracy - 0.75</h3>
+        <h3>Accuracy - 0.85</h3>
     </div>
           
         </div>
